@@ -1449,7 +1449,40 @@ footer {
     text-align: center;
   }
 
+  /* Fix for overflowing cards and text */
+  section {
+    padding: 80px 5%;
+  }
 
+  .about-stats-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item::after, .stat-item::before {
+    display: none !important;
+  }
+  
+  .stat-item {
+    border-bottom: 1px solid var(--border-glass);
+  }
+  
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+  
+  .about-education, .contact-info-panel, .contact-form-panel {
+    padding: 24px;
+  }
+
+  .contact-text p {
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+  }
+  
+  .contact-card {
+    align-items: flex-start;
+  }
 }
 
 /* ==========================================================================
