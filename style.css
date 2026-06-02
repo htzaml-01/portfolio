@@ -1381,6 +1381,32 @@ footer {
     display: block;
   }
 
+  .btn-cta {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 60%;
+    margin-left: 0;
+    max-width: 300px;
+  }
+
   .skills-container {
     grid-template-columns: 1fr;
     gap: 50px;
