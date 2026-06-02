@@ -1450,6 +1450,11 @@ footer {
   }
 
   /* Fix for overflowing cards and text */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   section {
     padding: 80px 5%;
   }
@@ -1474,10 +1479,13 @@ footer {
     padding: 24px;
   }
 
-  .contact-text p {
-    word-break: break-all;
-    word-wrap: break-word;
+  .contact-text p, .info-text p {
+    word-break: break-word;
     font-size: 0.95rem;
+  }
+
+  .about-info-grid {
+    grid-template-columns: 1fr;
   }
   
   .contact-card {
